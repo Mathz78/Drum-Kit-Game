@@ -14,7 +14,7 @@ for (let i = 0; i < numberOfButtons; i++) {
 
         switch (buttonInnerHTML) {
             case "w":
-                var tom1 = new Audio("../sounds/tom-1.mp3");
+                var tom1 = new Audio("../sounds/tom1.mp3");
                 tom1.play();
                 break;
 
@@ -44,7 +44,7 @@ for (let i = 0; i < numberOfButtons; i++) {
                 break;
             
             case "l":
-                var kick = new Audio("../sounds/kick.mp3");
+                var kick = new Audio("../sounds/kick-bass.mp3");
                 kick.play();
                 break;
         
