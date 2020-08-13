@@ -66,7 +66,7 @@ function playSounds(letter) {
             break;
     
         default:
-            console.log(buttonInnerHTML);
+            alert("Sorry, this key doesn't work!! Try again!!");
             break;
     }
 }
