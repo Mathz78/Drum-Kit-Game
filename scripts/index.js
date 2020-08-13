@@ -1,32 +1,35 @@
 var numberOfButtons = document.querySelectorAll(".drum").length;
-var keyPressed;
-var buttonInnerHTML;
 
+// Event and Function that get the key that was pressed and call the function to play the sound.
 document.addEventListener("keydown", function(event) {
-    keyPressed = event.key;
-    playSounds(buttonInnerHTML, keyPressed);
+    var keyPressed = event.key;
+    playSounds(keyPressed);
 });
 
+// This for-loop add an eventListener to each button to know which one was pressed
 for (let i = 0; i < numberOfButtons; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
         // I can create a variable to refer the button and change the color using the variable
-        // or i can just use "this"
+        // or i can just use "this", because "this" refer to the button that was pressed
         
         // Variable receive the text of the button that have been clicked
         // var text = this;
         
         // Change the color to white;
         // text.style.color = 'darkcyan';
-        buttonInnerHTML = this.innerHTML;
-        playSounds(buttonInnerHTML, keyPressed);
+
+        // Create a variable to receive the button that was pressed and call the function to play the sound using that variable as parameter
+        var buttonInnerHTML = this.innerHTML;
+        playSounds(buttonInnerHTML);
     });
 }
 
-function playSounds(button, key) {
-    var button = button;
-    var key = key;
-    // This switch-case play the sounds matching in what button was pressed.
-    switch (button || key) {
+// This function play the sounds based on the input
+function playSounds(letter) {
+    var letter = letter;
+
+    // This switch-case play the sounds using the button was pressed.
+    switch (letter) {
         case "w":
             var tom1 = new Audio("../sounds/tom1.mp3");
             tom1.play();
