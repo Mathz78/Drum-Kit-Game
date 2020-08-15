@@ -2,7 +2,7 @@ var numberOfButtons = document.querySelectorAll(".drum").length;
 
 // Event and Function that get the key that was pressed and call the function to play the sound.
 document.addEventListener("keydown", function(event) {
-    var keyPressed = event.key;
+    var keyPressed = event.key.toLowerCase();
     playSounds(keyPressed);
 });
 
