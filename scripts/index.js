@@ -65,6 +65,17 @@ function playSounds(letter) {
             kick.play();
             break;
     
+        case "capslock":
+            console.log("ok dude, why are you using capslock here???? hahah so funny!!");
+            break;
+
+        case "shift":
+            console.log("are you using shift right now? oh dude.. hahaha you're funny, right?");
+            break;
+
+        case "f5":
+            break;
+
         default:
             alert("Sorry, this key doesn't work!! Try again!!");
             break;
