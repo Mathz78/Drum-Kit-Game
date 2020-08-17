@@ -28,6 +28,19 @@ for (let i = 0; i < numberOfButtons; i++) {
 function playSounds(letter) {
     var letter = letter;
 
+    // Function to highlight the button that was pressed
+    function animateButton(letter) {
+        var activeButton = document.querySelector("." + letter);
+        activeButton.classList.add("pressed");
+        
+        // Function to remove the animation
+        let removeAnimation = setTimeout(function() {
+            activeButton.classList.remove("pressed");
+        }, 200);
+    }
+
+    animateButton(letter);
+
     // This switch-case play the sounds using the button was pressed.
     switch (letter) {
         case "w":

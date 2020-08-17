@@ -55,6 +55,7 @@ footer {
 .pressed {
     box-shadow: 0 3px 4px 0 #DA0463;
     opacity: 0.5;
+    transition-duration: 200ms;
 }
 
 .red { 
