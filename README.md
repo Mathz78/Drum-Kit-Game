@@ -13,6 +13,7 @@ In this module I'm learning more about "Advanced JavaScript and DOM Manipulation
 * Some concepts of OOP
 * How to use some natives functions from JavaScript
 * Switch case
+* Manipulate HTML classes with JavaScript
 
 #
 ### Thank you for coming, i hope see you soon !! 😊
