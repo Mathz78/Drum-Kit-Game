@@ -14,5 +14,6 @@ In this module I'm learning more about "Advanced JavaScript and DOM Manipulation
 * How to use some natives functions from JavaScript
 * Switch case
 
-
+#
 ### Thank you for coming, i hope see you soon !! 😊
+#
